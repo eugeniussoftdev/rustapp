@@ -4,11 +4,11 @@ use yew::prelude::*;
 fn app() -> Html {
     html! {
         <div>
-            <button>Press</button>
+            <button>{ "Press" }</button>
         </div>
     }
 }
 
 fn main() {
-    yew::start_app::App();
+    yew::Renderer::<App>::new().render();
 }
